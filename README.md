@@ -5,7 +5,7 @@ This project demonstrates the **optimization and deployment of a digit classific
 
 ---
 
-## 📁 Project Structure
+##  Project Structure
 
 ```
 ├── ECPS_202_EdgeAI_Report.pdf         # Detailed technical report
@@ -19,16 +19,16 @@ This project demonstrates the **optimization and deployment of a digit classific
 
 ---
 
-## 🧪 Overview
+##  Overview
 
-### ✅ Task:
+###  Task:
 Develop and optimize a CNN for digit classification using MATLAB. Post-training, the model undergoes:
 
 - **Structured pruning** using **L1 norm** to eliminate redundant channels
 - **8-bit quantization** using `dlquantizer` and calibration datasets
 - **Deployment to EFM32GG11**, followed by energy profiling via **Simplicity Studio's Commander Tool**
 
-### 📌 Tools & Frameworks Used:
+###  Tools & Frameworks Used:
 - **MATLAB + Deep Learning Toolbox**
 - **Embedded C SDK via Simplicity Studio**
 - **EFM32GG11 Giant Gecko MCU**
@@ -36,7 +36,7 @@ Develop and optimize a CNN for digit classification using MATLAB. Post-training,
 
 ---
 
-## 🔧 Functions and Their Role
+##  Functions and Their Role
 
 ### 1. **Training Function**
 ```matlab
@@ -86,7 +86,7 @@ validate(quantObj, validationData)
 
 ---
 
-## 📉 Optimization Progress
+##  Optimization Progress
 
 | Metric                     | Before Optimization | After Pruning + Quantization |
 |---------------------------|---------------------|------------------------------|
@@ -99,17 +99,17 @@ validate(quantObj, validationData)
 
 ---
 
-## 📊 Graphs (to insert later)
+##  Graphs (to insert later)
 
 - **Pruning Accuracy vs Sparsity**
 - **Filter Counts per Layer (Pre vs Post Pruning)**
 - **Energy vs Inference Time (Post Deployment)**
 
-_Use screenshots from MATLAB and Simplicity Studio here._
+
 
 ---
 
-## ⚡ Profiling (EFM32GG11)
+##  Profiling (EFM32GG11)
 
 - Used **Simplicity Studio Commander Tool** to analyze:
   - Flash/RAM before and after optimization
@@ -119,7 +119,7 @@ _Use screenshots from MATLAB and Simplicity Studio here._
 
 ---
 
-## 🧠 Key Learnings
+##  Key Learnings
 
 - **Structured pruning** can reduce parameter count by 90% without major accuracy loss.
 - **Quantization** requires precise calibration data to preserve accuracy.
@@ -128,26 +128,14 @@ _Use screenshots from MATLAB and Simplicity Studio here._
 
 ---
 
-## 📌 Summary
+##  Summary
 
 > Successfully trained, pruned, quantized, and deployed a CNN on EFM32GG11 using MATLAB. Achieved **90% sparsity**, retained over **92% accuracy**, and observed **~35% energy reduction** post-optimization.
 
 ---
 
-## 📷 Screenshots (to insert)
+##  Screenshots (to insert)
 - MATLAB accuracy plots
 - Pruning bar graphs
 - Simplicity Studio power profile output
 - Flash and RAM usage breakdown
-
----
-
-## 📁 References
-
-- [MathWorks Structured Pruning Docs](https://www.mathworks.com/help/deeplearning/ref/prune.html)
-- [EFM32GG11 Datasheet](https://www.silabs.com/documents/public/data-sheets/efm32gg11-datasheet.pdf)
-- [Simplicity Studio Tools](https://www.silabs.com/developers/simplicity-studio)
-
----
-
-> _Made as part of ECPS 202: Cyber-Physical Systems Design_
