@@ -3,21 +3,6 @@
 
 This project demonstrates the **optimization and deployment of a digit classification CNN** on the **EFM32GG11 microcontroller**. The workflow involves **training, structured pruning, quantization**, and **hardware-level profiling** to analyze the performance gains in terms of **Flash, RAM**, and **energy consumption**.
 
----
-
-##  Project Structure
-
-```
-├── ECPS_202_EdgeAI_Report.pdf         # Detailed technical report
-├── Part1_Training/                    # CNN training and evaluation
-├── Part2_Pruning/                     # L1-norm based structured pruning
-├── Part3_Quantization/                # 8-bit post-training quantization
-├── Deployment/                        # Final embedded deployment (EFM32GG11)
-├── Data/                              # Digit dataset (0-9)
-└── README.md                          # You're here!
-```
-
----
 
 ##  Overview
 
