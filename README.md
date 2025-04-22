@@ -97,7 +97,9 @@ validate(quantObj, validationData)
 ##  Profiling (EFM32GG11)
 
 - Used **Simplicity Studio Commander Tool** to analyze:
+- Before Optimization:-
   ![Before Optimization](ProfilingBeforePruning.png)
+  After Optimization:-
   ![After Optimization](ProfilingAfterPruning.png)
   - Flash/RAM before and after optimization
   - Energy consumption using EFM Energy Profiler
