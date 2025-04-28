@@ -84,11 +84,6 @@ validate(quantObj, validationData)
 
 ---
 
-##  Graphs (to insert later)
-
-- **Pruning Accuracy vs Sparsity**
-- **Filter Counts per Layer (Pre vs Post Pruning)**
-- **Energy vs Inference Time (Post Deployment)**
 
 
 
@@ -123,8 +118,3 @@ validate(quantObj, validationData)
 
 ---
 
-##  Screenshots (to insert)
-- MATLAB accuracy plots
-- Pruning bar graphs
-- Simplicity Studio power profile output
-- Flash and RAM usage breakdown
